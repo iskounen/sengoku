@@ -20,6 +20,12 @@ province_to_clan = {
   '紀伊': '畠山',
   '越中': '畠山',
   '能登': '畠山*',
+  '播磨': '山名',
+  '但馬': '山名',
+  '備後': '山名',
+  '備前': '山名',
+  '美作': '山名',
+
 }
 
 # Map clans to colors
@@ -29,6 +35,7 @@ clan_to_color = {
   '細川*': 'cyan',
   '畠山': 'green',
   '畠山*': 'lime',
+  '山名': 'purple',
 }
 
 def style_function(feature):
@@ -71,6 +78,8 @@ legend_html = '''
 &nbsp;<i style="background: red; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;斯波<br>
 &nbsp;<i style="background: blue; width: 12px; height: 10px; display: inline-block;"></i><i style="background: cyan; width: 12px; height: 10px; display: inline-block;"></i>&nbsp;細川<br>
 &nbsp;<i style="background: green; width: 12px; height: 10px; display: inline-block;"></i><i style="background: lime; width: 12px; height: 10px; display: inline-block;"></i>&nbsp;畠山<br>
+<br>
+&nbsp;<i style="background: purple; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;山名<br>
 </div>
 '''
 
