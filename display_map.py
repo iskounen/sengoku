@@ -25,7 +25,12 @@ province_to_clan = {
   '備後': '山名',
   '備前': '山名',
   '美作': '山名',
-
+  '若狭': '武田',
+  '丹後': '一色',
+  '三河': '細川',
+  '出雲': '京極',
+  '隠岐': '京極',
+  '飛騨': '京極',
 }
 
 # Map clans to colors
@@ -36,6 +41,9 @@ clan_to_color = {
   '畠山': 'green',
   '畠山*': 'lime',
   '山名': 'purple',
+  '武田': 'orange',
+  '一色': 'yellow',
+  '京極': 'magenta',
 }
 
 def style_function(feature):
@@ -73,13 +81,17 @@ folium.GeoJson(
 
 # Define a legend
 legend_html = '''
-<div style="position: fixed; bottom: 50px; left: 50px; width: 200px; height: 200px; border: 2px solid grey; z-index: 9999; font-size: 14px; background-color: white;">
+<div style="position: fixed; bottom: 50px; left: 50px; width: 200px; height: 250px; border: 2px solid grey; z-index: 9999; font-size: 14px; background-color: white;">
 &nbsp;<b>Legend</b><br>
 &nbsp;<i style="background: red; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;斯波<br>
 &nbsp;<i style="background: blue; width: 12px; height: 10px; display: inline-block;"></i><i style="background: cyan; width: 12px; height: 10px; display: inline-block;"></i>&nbsp;細川<br>
 &nbsp;<i style="background: green; width: 12px; height: 10px; display: inline-block;"></i><i style="background: lime; width: 12px; height: 10px; display: inline-block;"></i>&nbsp;畠山<br>
 <br>
 &nbsp;<i style="background: purple; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;山名<br>
+&nbsp;<i style="background: yellow; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;一色<br>
+&nbsp;<i style="background: magenta; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;京極<br>
+<br>
+&nbsp;<i style="background: orange; width: 24px; height: 10px; display: inline-block;"></i>&nbsp;武田<br>
 </div>
 '''
 
